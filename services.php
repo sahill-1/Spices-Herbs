@@ -9,14 +9,14 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>About Us</title>
+    <title>Gallery</title>
     <!--/google-fonts -->
     <link href="//fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <!--//google-fonts -->
     <!--/Template-CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <!--//Template-CSS -->
-    
+    <?php include 'modal.php'; ?>
     <style>
         .goog-logo-link {
             display: none !important;
@@ -32,7 +32,74 @@ Author URL: http://w3layouts.com
         .btn-enquiry{
             background-color: #ff7800;
             color: white;
+            height: 50px;
+            width: 120px;
         }
+        .btn-enquiry-product{
+            height: 40px;
+            color: white;
+        }
+    .inner-banner {
+    /* background: url(../images/gallerybanner.jpg) no-repeat center; */
+        background-image: url("assets/images/gallerybanner.jpg");
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        position: relative;
+        z-index: 0;
+    }
+    .inner-banner:before {
+        content: "";
+        background: var(--layer1);
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .gallery-products{
+        width: 80%;
+        border: 1px solid transparent;
+        margin: auto;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .gallery-products-div{
+        border: 1px solid transparent;
+        margin: auto;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+    .gallery-products-div-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .gallery-products-div-button button{
+        border-radius: 20px;
+        width: 130px;
+        background-color: #ff7800;
+        border: 1px solid darkgray;
+    }
+    .gallery-products-img{
+        width: 260px;
+        height: 200px;
+        border: 1px solid transparent;
+        margin: auto;
+    }
+    .gallery-products-img img{
+        width: 260px;
+        height: 200px;
+    }
+    .product-heading{
+        text-align: center;
+    }
+
     </style>
 </head>
 
@@ -41,7 +108,7 @@ Author URL: http://w3layouts.com
     <header id="site-header" class="fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
-                <h1><a class="navbar-brand" href="index.php">
+                <h1><a class="navbar-brand" href="index.html">
                         <span class="w3yellow">Spices</span> Herbs
                     </a></h1>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,12 +121,12 @@ Author URL: http://w3layouts.com
                             <a class="nav-link" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.php">Gallery</a>
+                            <a class="nav-link active" href="services.php">Gallery</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
@@ -110,18 +177,19 @@ Author URL: http://w3layouts.com
     </header>
     <!--//Header-->
     <!--/inner-page-->
-    <div class="inner-banner py-5">
+    <div class="inner-banner py-5 gallerybanner">
         <section class="w3l-breadcrumb text-left py-sm-5 ">
             <div class="container">
                 <div class="w3breadcrumb-gids">
                     <div class="w3breadcrumb-left text-left">
                         <h2 class="inner-w3-title mt-lg-5 mt-4">
-                            About Us </h2>
+                            Gallery</h2>
+
                     </div>
                     <div class="w3breadcrumb-right">
                         <ul class="breadcrumbs-custom-path">
                             <li><a href="index.php">Home</a></li>
-                            <li class="active"><span class="fas fa-arrow-right mx-2"></span> About Us</li>
+                            <li class="active"><span class="fas fa-arrow-right mx-2"></span> Gallery </li>
                         </ul>
                     </div>
                 </div>
@@ -130,226 +198,261 @@ Author URL: http://w3layouts.com
         </section>
     </div>
     <!--//inner-page-->
-    <!--/about-page-->
-    <section class="w3l-ab-page py-5" id="about1">
-        <div class="container py-lg-5 py-md-4 py-2">
-            <div class="row align-items-center">
-                <div class="col-lg-6 pe-lg-5">
-                    <h6 class="title-subw3hny mb-2">Our Info</h6>
-                    <h3 class="title-w3l mb-2">We cultivate everything for you!</h3>
-
-                    <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Non quae, fugiat.</p>
-                    <div class="row two-grids mt-5 pt-lg-4">
-                        <div class="col-sm-6 grids_info d-flex">
-                            <i class="fas fa-user-shield"></i>
-                            <div class="detail ms-3">
-                                <h4>Quality Matters</h4>
-                                <p>Lorem ipsum viverra feugiat libero.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 grids_info d-flex mt-sm-0 mt-4">
-                            <i class="fas fa-globe"></i>
-                            <div class="detail ms-3">
-                                <h4>
-                                    Worldwide Service</h4>
-                                <p>Lorem ipsum viverra feugiat libero.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 offset-lg-1 text-end mt-lg-0 mt-5 position-relative">
-                    <img src="assets/images/about-2.jpg" alt="" class="img-fluid radius-image">
-                    <div class="imginfo__box">
-                        <h6 class="imginfo__title">16+</h6>
-                        <p>Years of experience</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/w3-grids-->
-    <section class="w3l-stats-section py-5 pt-0" id="stats">
-        <div class="container py-md-5 pt-0">
-            <div class="w3l-stats-inner-inf">
-                <div class="row stats-con">
-                    <div class="col-lg-3 col-6 stats_info counter_grid">
-                        <p class="counter">2500 </p>
-                        <h3>Products</h3>
-                    </div>
-                    <div class="col-lg-3 col-6 stats_info counter_grid">
-                        <p class="counter">1500 </p>
-                        <h3>Expert Farmers</h3>
-                    </div>
-                    <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-4">
-                        <p class="counter">1280 </p>
-                        <h3>Business Success</h3>
-                    </div>
-                    <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-4">
-                        <p class="counter">3020</p>
-                        <h3>Happy Clients</h3>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--//w3-grids-->
-    <!--/bottom-3-grids-->
-    <div class=" w3l-3-grids py-5" id="grids-3">
-        <div class="container py-md-4">
+    <!--/w3l-index3-->
+    <section class="w3l-index-about py-5" id="about2">
+        <div class="container py-md-5 py-2">
             <div class="row">
-                <div class="col-md-6 mt-md-0">
-                    <div class="grids3-info position-relative">
-                        <a href="#img" class="d-block zoom"><img src="assets/images/about-banner.jpg" alt="" class="img-fluid news-image"></a>
-                        <div class="w3-grids3-info">
-                            <h4 class="gdnhy-1"><a href="#img">The art of hand-picked products</a>
-                                <a class="w3item-link btn btn-style mt-4" href="#">
-                                    Read More
-                                </a>
-
-                            </h4>
+                <div class="col-lg-6 pe-lg-5">
+                    <div class="w3l-abouthny-img">
+                        <img src="assets/images/gallery-image2.jpg" alt="" class="img-fluid radius-image">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <div class="w3l-abouthny-info">
+                        <h6 class="title-subw3hny">What We Do</h6>
+                        <h3 class="title-w3l">100% authentic, handpicked and hand grinded</h3>
+                        <p class="mt-4">We source all spices from certified organic farms, our farms and offer no-pesticide and fully organic spices.</p>
+                        <ul class="w3l-right-book w3l-right-book-grid mt-md-5 mt-4">
+                            <li><span class="fas fa-check"></span> Ayurvedic Herbs</li>
+                            <li><span class="fas fa-check"></span> Dry Fruits</li>
+                            <li><span class="fas fa-check"></span> Masala Powder</li>
+                            <li><span class="fas fa-check"></span> Turmeric Powder</li>
+                            <li><span class="fas fa-check"></span> Coriander Powder</li>
+                            <li><span class="fas fa-check"></span> Black Pepper</li>
+                        </ul>
+                        <!-- <a href="#services" class="btn btn-style btn-primary mt-4">Read More</a> -->
+                        <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//w3l-index3-->
+    <!--/features-section-->
+    <section class="w3l-features w3l-services-page py-5" id="work">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="title-content text-center mb-lg-3 mb-4">
+                <!-- <h6 class="title-subw3hny mb-1">Our Services</h6> -->
+                <h3 class="title-w3l">What We Offer</h3>
+            </div>
+            <div class="main-cont-wthree-2">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                                <i class="fas fa-egg"></i>
+                            </div>
+                            <div class="icon-info text-left">
+                                <h4><a href="#service" class="title-head mt-0">World Wide Exporting</a></h4>
+                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <div class="icon-info text-left">
+                                <h4><a href="#service" class="title-head mt-0">Inventory</a></h4>
+                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                                <i class="fas fa-kiwi-bird"></i>
+                            </div>
+                            <div class="icon-info text-left">
+                                <h4><a href="#service" class="title-head mt-0">Expert Management</a></h4>
+                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                                <i class="fas fa-feather"></i>
+                            </div>
+                            <div class="icon-info text-left">
+                                <h4><a href="#service" class="title-head mt-0">Best Quality</a></h4>
+                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                                <i class="fas fa-sign-language"></i>
+                            </div>
+                            <div class="icon-info text-left">
+                                <h4><a href="#service" class="title-head mt-0">Cutomer Relationships</a></h4>
+                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
+                        <div class="grids-1 box-wrap">
+                            <div class="icon">
+                                <i class="fas fa-fan"></i>
+                            </div>
+                            <div class="icon-info text-left">
+                                <h4><a href="#service" class="title-head mt-0">Tested & Approved</a></h4>
+                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mt-md-0 mt-4 grids3-info2">
-                    <div class="grids3-info position-relative">
-                        <a href="#img" class="d-block zoom"><img src="assets/images/banner2.jpg" alt="" class="img-fluid news-image"></a>
-                        <div class="w3-grids3-info second">
-                            <h4 class="gdnhy-1"><a href="#img">Dry and Preserve Packaging</a>
-                                <a class="w3item-link btn btn-style mt-4" href="#">
-                                    Read More
-                                </a>
-                            </h4>
+            </div>
+        </div>
+    </section>
+    <!--//features-section -->
 
+    <!--/w3l-grids-->
+    <!-- <section class="w3l-witemshny-main py-5">
+        <div class="container py-md-4">
+            
+            <div class="witemshny-grids row">
+                <div class="col-md-4 col-6 product-incfhny mt-4">
+                    <div class="weitemshny-grid oposition-relative">
+                        <a href="#img" class="d-block zoom"><img src="assets/images/g1.jpg" alt="" class="img-fluid news-image"></a>
+                        <div class="witemshny-inf">
                         </div>
                     </div>
+                    <h4 class="gdnhy-1 mt-lg-4 mt-3"><a href="#img">We are one of leading company</a>
+                    </h4>
+                    <p class="mt-md-2">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
                 </div>
+                <div class="col-md-4 col-6 product-incfhny mt-4">
+                    <div class="weitemshny-grid oposition-relative">
+                        <a href="#img" class="d-block zoom"><img src="assets/images/g6.jpg" alt="" class="img-fluid news-image"></a>
+                        <div class="witemshny-inf">
+                        </div>
+                    </div>
+                    <h4 class="gdnhy-1 mt-lg-4 mt-3"><a href="#img"> The primary goal of all business</a>
+                    </h4>
+                    <p class="mt-md-2">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+                </div>
+                <div class="col-md-4 col-6 product-incfhny mt-4">
+                    <div class="weitemshny-grid oposition-relative">
+                        <a href="#img" class="d-block zoom"><img src="assets/images/g2.jpg" alt="" class="img-fluid news-image"></a>
+                        <div class="witemshny-inf">
+                        </div>
+                    </div>
+                    <h4 class="gdnhy-1 mt-lg-4 mt-3"><a href="#img"> Learn how to grow Business</a>
+                    </h4>
+                    <p class="mt-md-2">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+    <!--//w3l-grids-->
+
+    <!-- Gallery Products -->
+    <div class="gallery-products">
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp-1.jpg" alt="">
+            </div>
+            <h5 class="product-heading">Haldi Powder</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
 
             </div>
         </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp1 (1).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Corn</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp1 (2).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Kaali Mirch</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp1 (3).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Clove</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp1 (4).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Masala Powder</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp1 (5).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Elaichi</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp1 (6).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Red chillie</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp1 (7).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Laung</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        <div class="gallery-products-div">
+            <div class="gallery-products-img">
+                <img src="./assets/images/gp-1(8).jpg" alt="">
+            </div>
+            <h5 class="product-heading">Mustard Seeds</h5>
+            <div class="gallery-products-div-button">
+                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
+
+            </div>
+        </div>
+        
     </div>
-    <!--//bottom-3-grids-->
+    <!-- Gallery Products -->
 
-    <!--/w3l-join-main-->
-    <section class="w3l-join-main py-5">
-        <div class="container py-md-5">
-            <div class="w3l-project-in">
-                <div class="row bottom-info text-left">
-                    <div class="col-lg-7 w3l-project-in-left pe-lg-5">
-                        <h6 class="title-subw3hny mb-2">Our Production</h6>
-                        <h3 class="title-w3l two mb-2">High quality organic products are sold to wholesale and retail partners.</h3>
-
-
-                    </div>
-                    <div class="col-lg-5 w3l-project-in-right">
-                        <div class="w3banner-content-btns">
-                            <a href="about.html" class="btn btn-style btn-white mt-4">Read More </a>
-                            <!-- <a href="contact.html" class="btn btn-style btn-primary mt-4 ms-3">Contact Us</a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--//w3l-join-main-->
-    <!--/team-sec-->
-    <section class="w3l-team-main team py-5" id="team">
-        <div class="container py-lg-5">
-            <div class="title-content text-center mb-2">
-                <h6 class="title-subw3hny mb-1">Our Team</h6>
-                <h3 class="title-w3l">Who Worked With Us.</h3>
-            </div>
-            <div class="row team-row justify-content-center">
-                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
-                    <div class="team-member text-center">
-                        <div class="team-img">
-                            <img src="assets/images/team1.jpg" alt="" class="radius-image">
-                            <div class="overlay-team">
-                                <div class="team-details text-center">
-                                    <!-- <div class="socials mt-20">
-                                        <a href="#url">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-linkedin-in"></span>
-                                        </a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#url" class="team-title">Lawrence Petrie</a>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                <!-- end team member -->
-                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
-                    <div class="team-member text-center">
-                        <div class="team-img">
-                            <img src="assets/images/team3.jpg" alt="" class="radius-image">
-                            <div class="overlay-team">
-                                <div class="team-details text-center">
-                                    <!-- <div class="socials mt-20">
-                                        <a href="#url">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-linkedin-in"></span>
-                                        </a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#url" class="team-title">Jack Peters</a>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                <!-- end team member -->
-                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
-                    <div class="team-member text-center">
-                        <div class="team-img">
-                            <img src="assets/images/team2.jpg" alt="" class="radius-image">
-                            <div class="overlay-team">
-                                <div class="team-details text-center">
-                                    <!-- <div class="socials mt-20">
-                                        <a href="#url">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-linkedin-in"></span>
-                                        </a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#url" class="team-title">Anna Phillips</a>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                <!-- end team member -->
-            </div>
-        </div>
-    </section>
-    <!--//team-sec-->
     <!--/footer-->
     <footer class="w3l-footer">
         <div class="w3l-footer-16 py-5">
             <div class="container py-md-5 py-3 pb-0">
                 <div class="row footer-p">
                     <div class="col-lg-4 col-md-6 pe-lg-5">
-                        <h2 class="footerw3l-logo"><a class="navbar-brand" href="index.php">
+                        <h2 class="footerw3l-logo"><a class="navbar-brand" href="index.html">
                                 <span class="w3yellow">Spices</span> Herbs
                             </a></h2>
                         <p class="mt-3">Lorem ipsum dolor sit, amet consectetur elit. Earum mollitia ipsam autem ipsam.dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
@@ -372,9 +475,9 @@ Author URL: http://w3layouts.com
                             <div class="col-xl-5 col-6 column">
                                 <h3>Information</h3>
                                 <ul class="footer-gd-16">
-                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="home.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="services.php">Gallery</a></li>
+                                    <li><a href="services.html">Gallery</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -396,7 +499,6 @@ Author URL: http://w3layouts.com
                         </div>
                     </div>
                     <!-- <div class="col-lg-4 col-md-6 column mt-lg-0 mt-4 pl-xl-0">
-                    
                         <h3>Instagram Feed</h3>
                         <div class="end-column row">
                             <div class="col-4 w3indta-grid">
@@ -429,6 +531,8 @@ Author URL: http://w3layouts.com
                                     <img src="assets/images/g6.jpg" class="img-fluid radius-image" alt="poultryfield">
                                 </a>
                             </div>
+
+
                         </div>
                     </div> -->
                     <div class="bwt-logo" style="width: 300px; height: 100px;">
@@ -482,6 +586,7 @@ Author URL: http://w3layouts.com
     <!-- Template JavaScript -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/theme-change.js"></script>
+
     <!-- MENU-JS -->
     <script>
         $(window).on("scroll", function() {
@@ -524,7 +629,6 @@ Author URL: http://w3layouts.com
     <!-- //disable body scroll which navbar is in active -->
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
-
 
 
 
