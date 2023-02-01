@@ -37,7 +37,7 @@ Author URL: http://w3layouts.com
         }
 
         .inner-banner {
-            /* background: url(../images/gallerybanner.jpg) no-repeat center; */
+            
             background-image: url("assets/images/contactbanner.jpg");
             background-size: cover;
             -webkit-background-size: cover;
@@ -57,6 +57,17 @@ Author URL: http://w3layouts.com
             left: 0;
             right: 0;
             z-index: -1;
+        }
+        .w3l-footer-16 {
+            height: 450px;
+        }
+        @media(max-width: 991px){
+            .email-address{
+                display: none;
+            }
+            .language{
+                display: none;
+            }
         }
     </style>
 </head>
@@ -111,8 +122,7 @@ Author URL: http://w3layouts.com
                                 <a class="close" href="#close">×</a>
                             </div> -->
                             <!-- /search popup -->
-                            <p style="text-align: center; color: grey;">9191234567890 <br> abc@gmail.com</p>
-
+                            <p class="email-address" style="text-align: center; color: grey;">9191234567890 <br> abc@gmail.com</p>
                         </li>
                     </ul>
                     <!--//search-right-->
@@ -143,9 +153,7 @@ Author URL: http://w3layouts.com
             <div class="container">
                 <div class="w3breadcrumb-gids">
                     <div class="w3breadcrumb-left text-left">
-                        <h2 class="inner-w3-title mt-lg-5 mt-4">
-                            Contact Us </h2>
-
+                        <h2 class="inner-w3-title mt-lg-5 mt-4">Contact Us </h2>
                     </div>
                     <div class="w3breadcrumb-right">
                         <ul class="breadcrumbs-custom-path">
@@ -167,8 +175,7 @@ Author URL: http://w3layouts.com
                     <div class="col-lg-6 contacts-5-grid pe-lg-5">
                         <h5 class="title-subw3hny">Contact our team</h5>
                         <h3 class="title-w3l mb-3">Get Enquiry</h3>
-                        <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elitull am aliqu am, velit rutrum dictum
-                            lobortis, turpis justo auc tor quam, a auctor lorem odio in nunc.</p>
+                        <p>Get enquiry at Organic Spices is fast, easy, and convenient! We offer free shipping on evry orders, so you can enjoy our delicious products</p>
                         <h4 class="title-w3l-adinf mt-4">Address</h4>
                         <div class="address-grid d-flex">
                             <i class="fas fa-map-marker-alt mt-2"></i>
@@ -239,19 +246,15 @@ Author URL: http://w3layouts.com
                         <h2 class="footerw3l-logo"><a class="navbar-brand" href="index.html">
                                 <span class="w3yellow">Spices</span> Herbs
                             </a></h2>
-                        <p class="mt-3">Lorem ipsum dolor sit, amet consectetur elit. Earum mollitia ipsam autem
-                            ipsam.dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                        <p class="mt-3">We know how valuable your time is which is why we've made it easy for you to shop with us. Our simple and user-friendly website makes it easy to find what you need in just a few clicks!</p>
                         <div class="columns-2 mt-lg-5 mt-4">
                             <ul class="social">
                                 <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <!-- <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a> -->
                                 </li>
                                 <li><a href="#twitter"><i class="fab fa-twitter"></i></a>
                                 </li>
                                 <li><a href="#google"><i class="fab fa-google-plus-g"></i></a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -269,7 +272,6 @@ Author URL: http://w3layouts.com
                             <!-- <div class="col-6 column">
                                 <h3>Services</h3>
                                 <ul class="footer-gd-16">
-
                                     <li><a href="#care">
                                             Brown Eggs</a></li>
                                     <li><a href="#meal">Chicken Broiler</a></li>
@@ -421,14 +423,14 @@ Author URL: http://w3layouts.com
 
 
     <!-- Language Converter -->
-    <script type="text/javascript">
+    <script type="text/javascript" defer>
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en'
             }, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript">
+    <script type="text/javascript" defer>
         (function () {
             var gtConstEvalStartTime = new Date();
             /*
@@ -607,11 +609,11 @@ Author URL: http://w3layouts.com
     </script>
     <!-- End Language Converter -->
     <!-- Including Jquery -->
-    <script src="assets/js/vendor/jquery-min.js"></script>
-    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/jquery-min.js"  defer></script>
+    <script src="assets/js/vendor/js.cookie.js"  defer></script>
     <!--Including Javascript-->
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/plugins.js " defer></script>
+    <script src="assets/js/main.js"  defer></script>
     <!--Newsletter Popup Cookies-->
     <script>
         function newsletter_popup() {

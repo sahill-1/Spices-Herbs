@@ -99,7 +99,17 @@ Author URL: http://w3layouts.com
     .product-heading{
         text-align: center;
     }
-
+    .w3l-footer-16 {
+        height: 450px;
+    }
+    @media(max-width: 991px){
+            .email-address{
+                display: none;
+            }
+            .language{
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -151,7 +161,7 @@ Author URL: http://w3layouts.com
                                 <a class="close" href="#close">×</a>
                             </div> -->
                             <!-- /search popup -->
-                            <p style="text-align: center; color: grey;">9191234567890 <br> abc@gmail.com</p>
+                            <p class="email-address" style="text-align: center; color: grey;">9191234567890 <br> abc@gmail.com</p>
                         </li>
                     </ul>
                     <!--//search-right-->
@@ -244,7 +254,7 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="icon-info text-left">
                                 <h4><a href="#service" class="title-head mt-0">World Wide Exporting</a></h4>
-                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                                <p class="text-para">Option to pay via Internet banking, credit card & Paypal.</p>
                             </div>
                         </div>
                     </div>
@@ -255,7 +265,7 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="icon-info text-left">
                                 <h4><a href="#service" class="title-head mt-0">Inventory</a></h4>
-                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                                <p class="text-para">Maintenance refers to a range of activities on a daily basis.</p>
                             </div>
                         </div>
                     </div>
@@ -266,7 +276,7 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="icon-info text-left">
                                 <h4><a href="#service" class="title-head mt-0">Expert Management</a></h4>
-                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                                <p class="text-para">Management of resources to attain organizational goals</p>
                             </div>
                         </div>
                     </div>
@@ -277,7 +287,7 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="icon-info text-left">
                                 <h4><a href="#service" class="title-head mt-0">Best Quality</a></h4>
-                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                                <p class="text-para">Spreading the pure spice that is handpick only for you.</p>
                             </div>
                         </div>
                     </div>
@@ -288,7 +298,7 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="icon-info text-left">
                                 <h4><a href="#service" class="title-head mt-0">Cutomer Relationships</a></h4>
-                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                                <p class="text-para">Our business is focused on healthy customers relations</p>
                             </div>
                         </div>
                     </div>
@@ -299,7 +309,7 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="icon-info text-left">
                                 <h4><a href="#service" class="title-head mt-0">Tested & Approved</a></h4>
-                                <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                                <p class="text-para">Check our reviews to know our customer experiences. </p>
                             </div>
                         </div>
                     </div>
@@ -455,7 +465,7 @@ Author URL: http://w3layouts.com
                         <h2 class="footerw3l-logo"><a class="navbar-brand" href="index.html">
                                 <span class="w3yellow">Spices</span> Herbs
                             </a></h2>
-                        <p class="mt-3">Lorem ipsum dolor sit, amet consectetur elit. Earum mollitia ipsam autem ipsam.dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                        <p class="mt-3">We know how valuable your time is which is why we've made it easy for you to shop with us. Our simple and user-friendly website makes it easy to find what you need in just a few clicks!</p>
                         <div class="columns-2 mt-lg-5 mt-4">
                             <ul class="social">
                                 <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a>
@@ -821,11 +831,11 @@ Author URL: http://w3layouts.com
 	</script>
 	<!-- End Language Converter -->
 	<!-- Including Jquery -->
-	<script src="assets/js/vendor/jquery-min.js"></script>
-	<script src="assets/js/vendor/js.cookie.js"></script>
-	<!--Including Javascript-->
-	<script src="assets/js/plugins.js"></script>
-	<script src="assets/js/main.js"></script>
+    <script src="assets/js/vendor/jquery-min.js"  defer></script>
+    <script src="assets/js/vendor/js.cookie.js"  defer></script>
+    <!--Including Javascript-->
+    <script src="assets/js/plugins.js " defer></script>
+    <script src="assets/js/main.js"  defer></script>
 	<!--Newsletter Popup Cookies-->
 	<script>
 		function newsletter_popup() {

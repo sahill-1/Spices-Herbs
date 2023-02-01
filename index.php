@@ -33,6 +33,19 @@ Author URL: http://w3layouts.com
             background-color: #ff7800;
             color: white;
         }
+        .w3l-footer-16 {
+            background: var(--footer-bg);
+            height: 550px
+        }
+        @media(max-width: 991px){
+            .email-address{
+                display: none;
+            }
+            .language{
+                display: none;
+            }
+        }
+        
     </style>
 </head>
 
@@ -84,7 +97,7 @@ Author URL: http://w3layouts.com
                                 <a class="close" href="#close">×</a>
                             </div> -->
                             <!-- /search popup -->
-                            <p style="text-align: center; color: grey;">9191234567890 <br> abc@gmail.com</p>
+                            <p class="email-address" style="text-align: center; color: grey;">9191234567890 <br> abc@gmail.com</p>
                         </li>
                     </ul>
                     <!--//search-right-->
@@ -152,8 +165,7 @@ Author URL: http://w3layouts.com
                 <div class="w3ab-left-top col-lg-6 mt-lg-0 mt-4 pt-lg-0 pt-2">
                     <h6 class="title-subw3hny mb-1">Get rather healthy.</h6>
                     <h3 class="title-w3l mb-2">Organic Spices Wholesaler in India</h3>
-                    <p class="my-3"> Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.Lorem ipsum dolor sit, amet consectetur ante ipsum elit. faucibus orci luctus et ultrices posuere cubilia Curae;
-                        Nulla mollis dapibus nunc. </p>
+                    <p class="my-3"> Organic Spices is the leading wholesaler in India providing the highest quality organic spices for your everyday cooking needs. Get access to the freshest, purest, and most flavorful ingredients from us!</p>
                     <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
                     <!-- <a href="about.html" class="btn btn-style btn-primary mt-4">Read More</a> -->
                 </div>
@@ -177,7 +189,7 @@ Author URL: http://w3layouts.com
                                 <i class="fas fa-shield-alt"></i>
                             </div>
                             <h4><a href="#service" class="title-head mb-3">Quality Matters</a></h4>
-                            <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                            <p class="text-para">100% Organic ingredients </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
@@ -186,7 +198,7 @@ Author URL: http://w3layouts.com
                                 <i class="fas fa-shipping-fast"></i>
                             </div>
                             <h4><a href="#service" class="title-head mb-3">Free Shipping</a></h4>
-                            <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                            <p class="text-para">Safest & Quickest Delivery</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mt-lg-5 mt-4">
@@ -195,7 +207,7 @@ Author URL: http://w3layouts.com
                                 <i class="fas fa-user-shield"></i>
                             </div>
                             <h4><a href="#service" class="title-head mb-3">Customer Satisfaction</a></h4>
-                            <p class="text-para">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam. </p>
+                            <p class="text-para">Unbeatable prices</p>
                         </div>
                     </div>
                 </div>
@@ -212,9 +224,7 @@ Author URL: http://w3layouts.com
                     <div class="col-lg-6 passion-grid-item-info pe-lg-5 mb-lg-0 mb-5">
                         <h6 class="title-subw3hny mb-1">Our invention</h6>
                         <h3 class="title-w3l mb-4">Your Health & Safety Is Our Priority</h3>
-                        <p class="mt-3 pe-lg-5">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
-                            ligula. Semper at tempufddfel.Lorem ipsum dolor sit, amet consectetur elit. Earum mollitia
-                            cum ex ipsam autem!earum sequi amet.</p>
+                        <p class="mt-3 pe-lg-5">Our spices are grown in India sustainably and certified organic. We source only top grade, gluten-free, non-GMO and free of any artificial preservatives or flavors.</p>
                         <div class="w3banner-content-btns">
                         <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
                             <!-- <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4 me-2">Read More </a> -->
@@ -227,7 +237,7 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="icon-text">
                                 <h4><a href="#service" class="title-head">Clean Inventories</a></h4>
-                                <p class="text-para mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula tempufddfel.</p>
+                                <p class="text-para mt-2">Inventory management involves ordering, stocking and using a business’s products.</p>
                             </div>
                         </div>
                         <div class="w3lgrids-1 box-wrap mt-4">
@@ -236,7 +246,7 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="icon-text">
                                 <h4><a href="#service" class="title-head">Hygienic Manufacturing</a></h4>
-                                <p class="text-para mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula tempufddfel.</p>
+                                <p class="text-para mt-2">Hygiene in manufacturing is vital for protecting public health & ensuring product quality.</p>
                             </div>
                         </div>
                     </div>
@@ -520,7 +530,7 @@ Author URL: http://w3layouts.com
                         <h2 class="footerw3l-logo"><a class="navbar-brand" href="index.php">
                                 <span class="w3yellow">Spices</span> Herbs
                             </a></h2>
-                        <p class="mt-3">Lorem ipsum dolor sit, amet consectetur elit. Earum mollitia ipsam autem ipsam.dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                        <p class="mt-3">We know how valuable your time is which is why we've made it easy for you to shop with us. Our simple and user-friendly website makes it easy to find what you need in just a few clicks!</p>
                         <div class="columns-2 mt-lg-5 mt-4">
                             <ul class="social">
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -886,12 +896,11 @@ Author URL: http://w3layouts.com
 		})();
 	</script>
 	<!-- End Language Converter -->
-	<!-- Including Jquery -->
-	<script src="assets/js/vendor/jquery-min.js"></script>
-	<script src="assets/js/vendor/js.cookie.js"></script>
-	<!--Including Javascript-->
-	<script src="assets/js/plugins.js"></script>
-	<script src="assets/js/main.js"></script>
+    <script src="assets/js/vendor/jquery-min.js"  defer></script>
+    <script src="assets/js/vendor/js.cookie.js"  defer></script>
+    <!--Including Javascript-->
+    <script src="assets/js/plugins.js " defer></script>
+    <script src="assets/js/main.js"  defer></script>
 	<!--Newsletter Popup Cookies-->
 	<script>
 		function newsletter_popup() {
