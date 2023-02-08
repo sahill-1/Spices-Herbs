@@ -18,6 +18,13 @@ Author URL: http://w3layouts.com
     <!--//Template-CSS -->
     <?php include 'modal.php'; ?>
     <style>
+        .right-side {
+            margin-top: 70px;
+        }
+        .w3l-footer-16 {
+            background: var(--footer-bg);
+            height: 490px;
+        }
         .goog-logo-link {
             display: none !important;
         }
@@ -33,10 +40,7 @@ Author URL: http://w3layouts.com
             background-color: #ff7800;
             color: white;
         }
-        .w3l-footer-16 {
-            background: var(--footer-bg);
-            height: 550px
-        }
+        
         @media(max-width: 991px){
             .email-address{
                 display: none;
@@ -55,7 +59,7 @@ Author URL: http://w3layouts.com
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
                 <h1><a class="navbar-brand" href="index.html">
-                        <span class="w3yellow">Spices</span> Herbs
+                        <span class="w3yellow">GKM</span>MASALE
                     </a></h1>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
@@ -97,7 +101,7 @@ Author URL: http://w3layouts.com
                                 <a class="close" href="#close">×</a>
                             </div> -->
                             <!-- /search popup -->
-                            <p class="email-address" style="text-align: center; color: grey;">9191234567890 <br> abc@gmail.com</p>
+                            <p class="email-address" style="text-align: center; color: grey;">+91-9893693303 <br> rgkm.avv@gmail.com</p>
                         </li>
                     </ul>
                     <!--//search-right-->
@@ -528,7 +532,7 @@ Author URL: http://w3layouts.com
                 <div class="row footer-p right-side">
                     <div class="col-lg-4 col-md-6 pe-lg-5">
                         <h2 class="footerw3l-logo"><a class="navbar-brand" href="index.php">
-                                <span class="w3yellow">Spices</span> Herbs
+                                <span class="w3yellow">GKM</span> MASALE
                             </a></h2>
                         <p class="mt-3">We know how valuable your time is which is why we've made it easy for you to shop with us. Our simple and user-friendly website makes it easy to find what you need in just a few clicks!</p>
                         <div class="columns-2 mt-lg-5 mt-4">

@@ -18,6 +18,15 @@ Author URL: http://w3layouts.com
     <!--//Template-CSS -->
     <?php include 'modal.php'; ?>
     <style>
+        .w3l-footer-16 {
+            background: var(--footer-bg);
+            height: 400px;
+            border: 1px solid transparent;
+        }
+        .row.footer-p {
+            border: 1px solid transparent;
+            margin-top: -40px;
+        }
         .goog-logo-link {
             display: none !important;
         }
@@ -99,9 +108,6 @@ Author URL: http://w3layouts.com
     .product-heading{
         text-align: center;
     }
-    .w3l-footer-16 {
-        height: 450px;
-    }
     @media(max-width: 991px){
             .email-address{
                 display: none;
@@ -109,6 +115,20 @@ Author URL: http://w3layouts.com
             .language{
                 display: none;
             }
+        }
+        .add-to-cart-btn{
+            width: 140px;
+            height: 45px;
+            background-color: #ff6a00;
+            color: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+        }
+        .add-to-cart-btn:hover{
+            color: black;
         }
     </style>
 </head>
@@ -119,7 +139,7 @@ Author URL: http://w3layouts.com
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
                 <h1><a class="navbar-brand" href="index.html">
-                        <span class="w3yellow">Spices</span> Herbs
+                        <span class="w3yellow">GKM</span>MASALE
                     </a></h1>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
@@ -161,7 +181,7 @@ Author URL: http://w3layouts.com
                                 <a class="close" href="#close">×</a>
                             </div> -->
                             <!-- /search popup -->
-                            <p class="email-address" style="text-align: center; color: grey;">9191234567890 <br> abc@gmail.com</p>
+                            <p class="email-address" style="text-align: center; color: grey;">+91-9893693303 <br> rgkm.avv@gmail.com</p>
                         </li>
                     </ul>
                     <!--//search-right-->
@@ -368,8 +388,8 @@ Author URL: http://w3layouts.com
             </div>
             <h5 class="product-heading">Haldi Powder</h5>
             <div class="gallery-products-div-button">
-                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
-
+                <!-- <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button> -->
+                <a href="haldipowder.html" class="add-to-cart-btn">Add To Cart </a>
             </div>
         </div>
         <div class="gallery-products-div">
@@ -378,8 +398,8 @@ Author URL: http://w3layouts.com
             </div>
             <h5 class="product-heading">Corn</h5>
             <div class="gallery-products-div-button">
-                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
-
+                <!-- <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button> -->
+                <a href="corn.html" class="add-to-cart-btn">Add To Cart </a>
             </div>
         </div>
         <div class="gallery-products-div">
@@ -388,8 +408,8 @@ Author URL: http://w3layouts.com
             </div>
             <h5 class="product-heading">Kaali Mirch</h5>
             <div class="gallery-products-div-button">
-                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
-
+                <!-- <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button> -->
+                <a href="kaalimirch.html" class="add-to-cart-btn">Add To Cart </a>
             </div>
         </div>
         <div class="gallery-products-div">
@@ -398,8 +418,8 @@ Author URL: http://w3layouts.com
             </div>
             <h5 class="product-heading">Clove</h5>
             <div class="gallery-products-div-button">
-                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
-
+                <!-- <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button> -->
+                <a href="clove.html" class="add-to-cart-btn">Add To Cart </a>
             </div>
         </div>
         <div class="gallery-products-div">
@@ -408,8 +428,8 @@ Author URL: http://w3layouts.com
             </div>
             <h5 class="product-heading">Masala Powder</h5>
             <div class="gallery-products-div-button">
-                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
-
+                <!-- <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button> -->
+                <a href="masalapowder.html" class="add-to-cart-btn">Add To Cart </a>
             </div>
         </div>
         <div class="gallery-products-div">
@@ -418,8 +438,8 @@ Author URL: http://w3layouts.com
             </div>
             <h5 class="product-heading">Elaichi</h5>
             <div class="gallery-products-div-button">
-                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
-
+                <!-- <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button> -->
+                <a href="elaichi.html" class="add-to-cart-btn">Add To Cart </a>
             </div>
         </div>
         <div class="gallery-products-div">
@@ -428,8 +448,8 @@ Author URL: http://w3layouts.com
             </div>
             <h5 class="product-heading">Red chillie</h5>
             <div class="gallery-products-div-button">
-                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
-
+                <!-- <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button> -->
+                <a href="redchillie.html" class="add-to-cart-btn">Add To Cart </a>
             </div>
         </div>
         <div class="gallery-products-div">
@@ -438,8 +458,8 @@ Author URL: http://w3layouts.com
             </div>
             <h5 class="product-heading">Laung</h5>
             <div class="gallery-products-div-button">
-                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
-
+                <!-- <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button> -->
+                <a href="laung.html" class="add-to-cart-btn">Add To Cart </a>
             </div>
         </div>
         <div class="gallery-products-div">
@@ -448,8 +468,8 @@ Author URL: http://w3layouts.com
             </div>
             <h5 class="product-heading">Mustard Seeds</h5>
             <div class="gallery-products-div-button">
-                <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button>
-
+                <!-- <button class="btn-enquiry-now btn Enquiry-btn mfp-iframe btn-enquiry-product" data-bs-toggle="modal" data-toggle="modal" data-bs-target="#exampleModal2" data-target="#exampleModal2">Enquiry now</button> -->
+                <a href="mustardseeds.html" class="add-to-cart-btn">Add To Cart </a>
             </div>
         </div>
         
@@ -463,7 +483,7 @@ Author URL: http://w3layouts.com
                 <div class="row footer-p">
                     <div class="col-lg-4 col-md-6 pe-lg-5">
                         <h2 class="footerw3l-logo"><a class="navbar-brand" href="index.html">
-                                <span class="w3yellow">Spices</span> Herbs
+                                <span class="w3yellow">GKM</span> MASALE
                             </a></h2>
                         <p class="mt-3">We know how valuable your time is which is why we've made it easy for you to shop with us. Our simple and user-friendly website makes it easy to find what you need in just a few clicks!</p>
                         <div class="columns-2 mt-lg-5 mt-4">

@@ -9,7 +9,7 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>About Us</title>
+    <title>Laung</title>
     <!--/google-fonts -->
     <link href="//fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <!--//google-fonts -->
@@ -57,6 +57,152 @@ Author URL: http://w3layouts.com
                 display: none;
             }
         }
+
+
+        .product-details {
+            color: #6e6e6e;
+            text-align: center;
+            margin-top: 50px;
+            text-decoration: underline;
+        }
+
+        .cart-product {
+            width: 90%;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-bottom: 60px;
+            display: flex;
+        }
+
+        .left-part {
+            width: 50%;
+            border: 1px solid transparent;
+        }
+
+        .left-part-img {
+            height: 400px;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-part-img img {
+            width: 340px;
+            height: 320px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+
+        .right-part {
+            width: 50%;
+            border: 1px solid transparent;
+        }
+
+        .right-part-name {
+            font-family: serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 42px;
+        }
+
+        .right-part-p {
+            font-size: 13px;
+            margin-top: 3px;
+        }
+
+        .right-part-h5 {
+            font-size: 22px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .right-part-gram {
+            color: black;
+            font-size: 16px;
+        }
+
+        .right-part-product-details {
+            font-size: 19px;
+            margin-top: 20px;
+        }
+
+        .right-part-product-description {
+            font-size: 16px;
+            margin-top: 6px;
+            line-height: 20px;
+        }
+
+        .right-part-icons {
+            width: 350px;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .right-part-icons-div img {
+            width: 30px;
+            height: 30px;
+            margin-left: 40%;
+        }
+
+        .right-part-icons-div p {
+            text-align: center;
+            font-size: 14px;
+            line-height: 15px;
+            color: #999999;
+        }
+
+        .right-part-paynow {
+            font-size: 20px;
+            font-weight: 600;
+            width: 150px;
+            height: 50px;
+            border-radius: 5px;
+            margin-top: 20px;
+            background-color: #ff6a00;
+            color: white;
+            border-style: none;
+        }
+
+        @media(max-width: 860px) {
+            .cart-product {
+                display: grid;
+                grid-template-columns: auto;
+            }
+
+            .left-part {
+                margin: auto;
+            }
+
+            .right-part {
+                margin: auto;
+                text-align: center;
+            }
+
+            .right-part-icons-div img {
+                margin-left: -3px
+            }
+        }
+
+        @media(max-width: 600px) {
+            .right-part-icons {
+                margin-left: -30px;
+            }
+        }
+
+        @media(max-width: 500px) {
+            .right-part-icons {
+                margin-left: -70px;
+            }
+        }
+
+        @media(max-width: 400px) {
+            .right-part-icons-div img {
+                width: 19px;
+                height: 15px;
+            }
+        }
     </style>
 </head>
 
@@ -80,7 +226,7 @@ Author URL: http://w3layouts.com
                             <a class="nav-link" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
+                            <a class="nav-link " href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.php">Gallery</a>
@@ -92,46 +238,15 @@ Author URL: http://w3layouts.com
                         <div class="language">
                             <a id="google_translate_element"></a>
                         </div>
-
                     </ul>
                     <!--/search-right-->
                     <ul class="header-search me-lg-4">
                         <li class="nav-item search-right">
-                            <!-- <a href="#search" class="btn search-btn btn-primary" title="search"><span class="fas fa-search me-2" aria-hidden="true"></span> Search</a> -->
-                            <!-- search popup -->
-                            <!-- <div id="search" class="pop-overlay">
-                                <div class="popup">
-                                    <h3 class="title-w3l two mb-4 text-left">Search Here</h3>
-                                    <form action="#" method="GET" class="search-box d-flex position-relative">
-                                        <input type="search" placeholder="Enter Keyword here" name="search" required="required" autofocus="">
-                                        <button type="submit" class="btn"><span class="fas fa-search" aria-hidden="true"></span></button>
-                                    </form>
-                                </div>
-                                <a class="close" href="#close">×</a>
-                            </div> -->
-                            <!-- /search popup -->
                             <p class="email-address" style="text-align: center; color: grey;">+91-9893693303 <br>
                                 rgkm.avv@gmail.com</p>
                         </li>
                     </ul>
-                    <!--//search-right-->
                 </div>
-                <!-- toggle switch for light and dark theme -->
-                <!-- <div class="mobile-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div> -->
-                <!-- //toggle switch for light and dark theme -->
-
             </nav>
         </div>
     </header>
@@ -143,12 +258,12 @@ Author URL: http://w3layouts.com
                 <div class="w3breadcrumb-gids">
                     <div class="w3breadcrumb-left text-left">
                         <h2 class="inner-w3-title mt-lg-5 mt-4">
-                            About Us </h2>
+                            Cart Page </h2>
                     </div>
                     <div class="w3breadcrumb-right">
                         <ul class="breadcrumbs-custom-path">
                             <li><a href="index.php">Home</a></li>
-                            <li class="active"><span class="fas fa-arrow-right mx-2"></span> About Us</li>
+                            <li class="active"><span class="fas fa-arrow-right mx-2"></span> Product</li>
                         </ul>
                     </div>
                 </div>
@@ -157,221 +272,48 @@ Author URL: http://w3layouts.com
         </section>
     </div>
     <!--//inner-page-->
-    <!--/about-page-->
-    <section class="w3l-ab-page py-5" id="about1">
-        <div class="container py-lg-5 py-md-4 py-2">
-            <div class="row align-items-center">
-                <div class="col-lg-6 pe-lg-5">
-                    <h6 class="title-subw3hny mb-2">Our Info</h6>
-                    <h3 class="title-w3l mb-2">We cultivate everything for you!</h3>
 
-                    <p class="mt-3">We guarantee that your spices will always be delivered fresh! Our high-end packaging
-                        ensures that your spices stay fresh even during long-distance shipping</p>
-                    <div class="row two-grids mt-5 pt-lg-4">
-                        <div class="col-sm-6 grids_info d-flex">
-                            <i class="fas fa-user-shield"></i>
-                            <div class="detail ms-3">
-                                <h4>Quality Matters</h4>
-                                <p>100% Organic ingredients and hand grinded.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 grids_info d-flex mt-sm-0 mt-4">
-                            <i class="fas fa-globe"></i>
-                            <div class="detail ms-3">
-                                <h4>
-                                    Worldwide Service</h4>
-                                <p>We deliver our products anywhere in the world.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 offset-lg-1 text-end mt-lg-0 mt-5 position-relative">
-                    <img src="assets/images/about-2.jpg" alt="" class="img-fluid radius-image">
-                    <div class="imginfo__box">
-                        <h6 class="imginfo__title">16+</h6>
-                        <p>Years of experience</p>
-                    </div>
-                </div>
+    <!-- Product Details -->
+    <h2 class="product-details">Product Details</h2>
+    <div class="cart-product">
+        <div class="left-part">
+            <div class="left-part-img">
+                <img src="./assets/images/gp1 (7).jpg" alt="">
             </div>
         </div>
-    </section>
-    <!--/w3-grids-->
-    <section class="w3l-stats-section py-5 pt-0" id="stats">
-        <div class="container py-md-5 pt-0">
-            <div class="w3l-stats-inner-inf">
-                <div class="row stats-con">
-                    <div class="col-lg-3 col-6 stats_info counter_grid">
-                        <p class="counter">2500 </p>
-                        <h3>Products</h3>
-                    </div>
-                    <div class="col-lg-3 col-6 stats_info counter_grid">
-                        <p class="counter">1500 </p>
-                        <h3>Expert Farmers</h3>
-                    </div>
-                    <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-4">
-                        <p class="counter">1280 </p>
-                        <h3>Business Success</h3>
-                    </div>
-                    <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-4">
-                        <p class="counter">3020</p>
-                        <h3>Happy Clients</h3>
-                    </div>
-
+        <div class="right-part">
+            <h3 class="right-part-name">Laung</h3>
+            <p class="right-part-p">5.0
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+                <span><i class="fa fa-star"></i></span>
+            </p>
+            <h5 class="right-part-h5">Rs. 270.00</h5>
+            <p class="right-part-gram">per 250 gm</p>
+            <h4 class="right-part-product-details">Description</h4>
+            <p class="right-part-product-description">Cloves are the aromatic flower buds of a tree in the family Myrtaceae, Syzygium aromaticum. They are native to the Maluku Islands in Indonesia.</p>
+            <div class="right-part-icons">
+                <div class="right-part-icons-div">
+                    <img src="./assets/images/cart (3).png" alt="">
+                    <p>Secure Payment</p>
+                </div>
+                <div class="right-part-icons-div">
+                    <img src="./assets/images/cart (2).png" alt="">
+                    <p>Guaranteed Satisfaction</p>
+                </div>
+                <div class="right-part-icons-div">
+                    <img src="./assets/images/cart (1).png" alt="">
+                    <p>Privacy Protected</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--//w3-grids-->
-    <!--/bottom-3-grids-->
-    <div class=" w3l-3-grids py-5" id="grids-3">
-        <div class="container py-md-4">
-            <div class="row">
-                <div class="col-md-6 mt-md-0">
-                    <div class="grids3-info position-relative">
-                        <a href="#img" class="d-block zoom"><img src="assets/images/about-banner.jpg" alt=""
-                                class="img-fluid news-image"></a>
-                        <div class="w3-grids3-info">
-                            <h4 class="gdnhy-1"><a href="#img">The art of hand-picked products</a>
-                                <a class="w3item-link btn btn-style mt-4" href="#">
-                                    Read More
-                                </a>
-
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-md-0 mt-4 grids3-info2">
-                    <div class="grids3-info position-relative">
-                        <a href="#img" class="d-block zoom"><img src="assets/images/banner2.jpg" alt=""
-                                class="img-fluid news-image"></a>
-                        <div class="w3-grids3-info second">
-                            <h4 class="gdnhy-1"><a href="#img">Dry and Preserve Packaging</a>
-                                <a class="w3item-link btn btn-style mt-4" href="#">
-                                    Read More
-                                </a>
-                            </h4>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <button class="right-part-paynow">Pay Now</button>
         </div>
     </div>
-    <!--//bottom-3-grids-->
-
-    <!--/w3l-join-main-->
-    <section class="w3l-join-main py-5">
-        <div class="container py-md-5">
-            <div class="w3l-project-in">
-                <div class="row bottom-info text-left">
-                    <div class="col-lg-7 w3l-project-in-left pe-lg-5">
-                        <h6 class="title-subw3hny mb-2">Our Production</h6>
-                        <h3 class="title-w3l two mb-2">High quality organic products are sold to wholesale and retail
-                            partners.</h3>
+    <!-- Product Details -->
 
 
-                    </div>
-                    <div class="col-lg-5 w3l-project-in-right">
-                        <div class="w3banner-content-btns">
-                            <a href="about.html" class="btn btn-style btn-white mt-4">Read More </a>
-                            <!-- <a href="contact.html" class="btn btn-style btn-primary mt-4 ms-3">Contact Us</a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--//w3l-join-main-->
-    <!--/team-sec-->
-    <section class="w3l-team-main team py-5" id="team">
-        <div class="container py-lg-5">
-            <div class="title-content text-center mb-2">
-                <h6 class="title-subw3hny mb-1">Our Team</h6>
-                <h3 class="title-w3l">Who Worked With Us.</h3>
-            </div>
-            <div class="row team-row justify-content-center">
-                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
-                    <div class="team-member text-center">
-                        <div class="team-img">
-                            <img src="assets/images/team1.jpg" alt="" class="radius-image">
-                            <div class="overlay-team">
-                                <div class="team-details text-center">
-                                    <!-- <div class="socials mt-20">
-                                        <a href="#url">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-linkedin-in"></span>
-                                        </a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#url" class="team-title">Lawrence Petrie</a>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                <!-- end team member -->
-                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
-                    <div class="team-member text-center">
-                        <div class="team-img">
-                            <img src="assets/images/team3.jpg" alt="" class="radius-image">
-                            <div class="overlay-team">
-                                <div class="team-details text-center">
-                                    <!-- <div class="socials mt-20">
-                                        <a href="#url">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-linkedin-in"></span>
-                                        </a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#url" class="team-title">Jack Peters</a>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                <!-- end team member -->
-                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
-                    <div class="team-member text-center">
-                        <div class="team-img">
-                            <img src="assets/images/team2.jpg" alt="" class="radius-image">
-                            <div class="overlay-team">
-                                <div class="team-details text-center">
-                                    <!-- <div class="socials mt-20">
-                                        <a href="#url">
-                                            <span class="fab fa-facebook-f"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-twitter"></span>
-                                        </a>
-                                        <a href="#url">
-                                            <span class="fab fa-linkedin-in"></span>
-                                        </a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#url" class="team-title">Anna Phillips</a>
-                        <p>Lorem Ipsum</p>
-                    </div>
-                </div>
-                <!-- end team member -->
-            </div>
-        </div>
-    </section>
-    <!--//team-sec-->
     <!--/footer-->
     <footer class="w3l-footer">
         <div class="w3l-footer-16 py-5">
